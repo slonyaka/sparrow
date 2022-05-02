@@ -1,0 +1,31 @@
+{
+    "name": "slonyaka/sparrow",
+    "description": "Dashboard builder for laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Slonyaka\\Sparrow\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "s.slonchakov",
+            "email": "slonchakov@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^9.10"
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Slonyaka\\Sparrow\\Providers\\BaseServiceProvider"
+          ],
+          "aliases": {
+            "Alert": "Orchid\\Support\\Facades\\Alert",
+            "Dashboard": "Orchid\\Support\\Facades\\Dashboard"
+          }
+        }
+      }
+}
